@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prata&display=swap");
+:root {
+  --primary: #f69e4c;
+  --white: #ffffff;
+  --grey: #acacac;
+  --grey-dark: rgba(114, 114, 114, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home {
+  background: url("../img/home.png");
+}
+
+.pensadores {
+  background: url("../img/pensamento.png");
+}
+
+header {
+  width: 100%;
+  height: 65px;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+header img {
+  height: 50%;
+  margin: 0 10px;
+}
+header nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  display: inline-flex;
+  justify-content: center;
+  list-style: none;
+  min-width: 600px;
+}
+header nav ul li {
+  margin: 0 20px;
+  font-weight: 700;
+}
+header nav ul li a {
+  color: var(--grey);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header nav ul li a.active {
+  color: var(--white);
+}
+header nav ul li a:hover {
+  color: var(--white);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main div.main-title {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main div.main-title h1 {
+  color: var(--primary);
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-size: 72pt;
+  text-align: center;
+}
+main div.main-title p {
+  width: 60%;
+  color: var(--white);
+  font-size: 16pt;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: 30px;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--grey-dark);
+}
+footer h6 {
+  font-size: 12pt;
+  color: var(--grey);
+}
+
+section.pensador {
+  width: 500px;
+}
+section.pensador div {
+  width: 300px;
+}/*# sourceMappingURL=styles.css.map */
