@@ -1,0 +1,112 @@
+div.section-wrapper {
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  transform: scale(0.9);
+
+  .row {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .right {
+    justify-content: flex-end;
+  }
+
+  &::before {
+    content: "";
+
+    width: 3px;
+    position: absolute;
+    border-radius: 4px;
+    top: 10%;
+    left: 50%;
+    height: 80%;
+    background-color: var(--primary);
+  }
+}
+
+section.pensador {
+  width: 500px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+
+  div.img-pensador {
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+    margin: 15px;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      transform: scale(1.2);
+      border: 2px solid var(--primary);
+    }
+  }
+
+  div.aristoteles {
+    background: url("../img/pensadores/aristoteles.jpg") center #302020
+      no-repeat;
+    background-size: cover;
+  }
+
+  div.tales {
+    background: url("../img/pensadores/tales.jpg") center #302020 no-repeat;
+    background-size: cover;
+  }
+
+  div.democritos {
+    background: url("../img/pensadores/democritos.jpg") center #302020 no-repeat;
+    background-size: cover;
+  }
+  div.epicuro {
+    background: url("../img/pensadores/epicuro.jpg") center #302020 no-repeat;
+    background-size: cover;
+  }
+
+  div.pitagoras {
+    background: url("../img/pensadores/pitagoras.jpg") center #302020 no-repeat;
+    background-size: cover;
+  }
+
+  div.socrates {
+    background: url("../img/pensadores/socrates.jpg") center #302020 no-repeat;
+    background-size: cover;
+  }
+
+  div.platao {
+    background: url("../img/pensadores/platao.jpg") center #302020 no-repeat;
+    background-size: cover;
+  }
+
+  div.heraclito {
+    background: url("../img/pensadores/heraclito.jpg") center #302020 no-repeat;
+    background-size: cover;
+  }
+
+  div.pensador-textos {
+    width: 300px;
+    height: 100%;
+
+    h2 {
+      font-family: "Prata", serif;
+      font-size: 20pt;
+      font-weight: 500;
+      color: var(--primary);
+
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-weight: 600;
+      color: var(--white);
+    }
+  }
+}
